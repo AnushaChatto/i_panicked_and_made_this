@@ -1,0 +1,54 @@
+/* C++ program to solve N Queen Problem using
+backtracking */
+#include<bits/stdc++.h>
+using namespace std;
+#define N 4
+
+int right_diagonal[N+1];
+int left_diagonal[N+1];
+int column_array[N+1];
+
+void printSolution(int board[N][N])
+{
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++)
+            cout<<" "<< board[i][j]<<" ";
+        cout<<endl;
+    }
+}
+
+bool solution_process(int board[N][N], int QP){
+    if (QP>=N){
+        return true;
+    }
+    for(int i=0;i<N;i++){
+        if((left_diagonal[i - QP + N - 1] != 1 && right_diagonal[i + QP] != 1) && column_array[i] != 1){
+            board[i][QP] = 1;
+            left_diagonal[i - QP + N - 1] = right_diagonal[i + QP] = column_array[i] = 1;
+            if(solution_process(board,QP+1)) //RECURSION
+            return true;
+            board[i][QP] = 0; // BACKTRACK
+            left_diagonal[i - QP + N - 1] = right_diagonal[i + QP] = column_array[i] = 0;
+        }
+    }
+    return false;
+}
+
+bool solveNQ()
+{
+    int board[N][N] = {0};
+ 
+    if (solution_process(board, 0) == false) {
+        cout<<"Solution does not exist";
+        return false;
+    }
+ 
+    printSolution(board);
+    return true;
+}
+// driver program to test above function
+int main()
+{
+	solveNQ();
+	return 0;
+}

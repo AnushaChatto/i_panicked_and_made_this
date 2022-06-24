@@ -12,20 +12,26 @@
   align-items: center;
 }
 
+.main a{
+  color: #0070f3;
+  text-decoration: none;
+}
+
 .footer {
   display: flex;
-  flex: 1;
+  flex: 2;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .title a {
@@ -82,7 +88,8 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 18.75em;
+  height: 11.75em;
 }
 
 .card:hover,
@@ -106,6 +113,53 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #0070f3;
+  color: white;
+  padding: .5em;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown_content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown_content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #0070f3;
 }
 
 @media (max-width: 600px) {
