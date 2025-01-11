@@ -11,7 +11,6 @@ const Home: NextPage = () => {
         <meta name="description" content="I panicked and Made this" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>I Panicked and Made this!!</h1>
 
@@ -50,12 +49,6 @@ const Home: NextPage = () => {
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        Well to be honest I wanted to show off stuff so I didn't put much
-        thought into the design. Not an artist just sad.<br/> Also whoever made the
-        next.js home page did a nice job so I just built over it with some style and dimension corrections
-      </footer>
     </div>
   );
 };
