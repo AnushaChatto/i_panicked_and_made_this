@@ -27,7 +27,7 @@ const DynamicAlgos: NextPage = () => {
     
               <Link href="/algorithms/climbing_stairs" className={styles.card}>
                 <h2>Climbing Stairs &rarr;</h2>
-                <p>Because I can't tell my parents that I jumped 4 steps at a time</p>
+                <p>Because I cannot tell my parents that I jumped 4 steps at a time</p>
               </Link>
     
               <Link
