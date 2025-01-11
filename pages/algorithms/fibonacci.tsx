@@ -33,17 +33,6 @@ const Fibonnaci: NextPage = () => {
         </div>
         <p>Input Number</p>
       </main>
-
-      <footer className={styles.footer}>
-        Go Back to&nbsp;
-        <div className={styles.dropdown}>
-          <button className={styles.dropbtn}>Dropdown</button>
-          <div className={styles.dropdown_content}>
-            <a href="/dynamicAlgos">Algorithms</a>
-            <a href="/">Home</a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
