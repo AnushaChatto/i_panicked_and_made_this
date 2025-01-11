@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "../../styles/Home.module.scss";
 import algorithm from "../../styles/algorithmsPage.module.scss";
 import ReactSyntaxHighlighter from "react-syntax-highlighter";
-
+import Link from 'next/link'
 
 const Queens: NextPage = () => {
   return (
