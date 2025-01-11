@@ -188,9 +188,11 @@
   background: #10073d;
   float: left;
 
-  // & > span {
-    
-  // }
+  & > span {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
 }
 
 
