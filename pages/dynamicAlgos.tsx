@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-
+import Link from 'next/link'
 const DynamicAlgos: NextPage = () => {
     return (
         <div className={styles.container}>
@@ -20,25 +20,25 @@ const DynamicAlgos: NextPage = () => {
             </p>
     
             <div className={styles.grid}>
-              <a href="/algorithms/fibonacci" className={styles.card}>
+              <Link href="/algorithms/fibonacci" className={styles.card}>
                 <h2>Fibonacci &rarr;</h2>
                 <p>You know the problem you do in cs class 101?</p>
-              </a>
+              </Link>
     
-              <a href="/algorithms/climbing_stairs" className={styles.card}>
+              <Link href="/algorithms/climbing_stairs" className={styles.card}>
                 <h2>Climbing Stairs &rarr;</h2>
                 <p>Because I can't tell my parents that I jumped 4 steps at a time</p>
-              </a>
+              </Link>
     
-              <a
+              <Link
                 href="/algorithms/queens"
                 className={styles.card}
               >
                 <h2>N Queens Problem &rarr;</h2>
                 <p>Even though I suck at Chess</p>
-              </a>
+              </Link>
     
-              <a
+              <Link
                 href="#"
                 className={styles.card}
               >
@@ -46,7 +46,7 @@ const DynamicAlgos: NextPage = () => {
                 <p>
                   Because I know if you studied cs you still have nightmares about this
                 </p>
-              </a>
+              </Link>
             </div>
           </main>
         </div>

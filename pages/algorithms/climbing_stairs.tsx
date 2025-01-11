@@ -28,9 +28,9 @@ const Climbing_Stairs: NextPage = () => {
           <br />
           Return the minimum cost to reach the top of the floor.
         </p>
-        <a href="https://leetcode.com/problems/min-cost-climbing-stairs/">
+        <Link href="https://leetcode.com/problems/min-cost-climbing-stairs/">
           https://leetcode.com/problems/min-cost-climbing-stairs/
-        </a>
+        </Link>
 
         <p>Basic Logic</p>
         <div className={styles.code}>
