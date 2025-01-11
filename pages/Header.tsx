@@ -7,8 +7,7 @@ const Header: React.FC = () => {
         <div className={styles.dropdown}>
           <button className={styles.dropbtn}>Browse</button>
           <div className={styles.dropdown_content}>
-            <a href="/dynamicAlgos">Algorithms</a>
-            <a href="/">Home</a>
+            
           </div>
         </div>
     </header>
