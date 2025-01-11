@@ -1,3 +1,7 @@
+This site is being hosted on Vercel:
+https://i-panicked-and-made-this-czv3-git-test-anushachattos-projects.vercel.app/
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
