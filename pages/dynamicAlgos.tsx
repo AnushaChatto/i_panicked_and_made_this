@@ -13,7 +13,7 @@ const DynamicAlgos: NextPage = () => {
           </Head>
     
           <main className={styles.main}>
-            <h1 className={styles.title}>This is a few random algorithms and decided to go ahead and add them</h1>
+            <h1 className={styles.title}>These are a few random algorithms and decided to go ahead and add them</h1>
     
             <p className={styles.description}>
               Take a look
