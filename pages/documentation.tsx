@@ -22,7 +22,7 @@ const DynamicAlgos: NextPage = () => {
             <p>However here, This is called Documentation, thus the technical aspects of most of the units of the site are specified here</p>
             <p>You should find each project separately, including the repo for this site at: <Link href="https://github.com/AnushaChatto">AnushaChatto: Github</Link></p>
             <br></br>
-            <p>This site is a Next.js project bootstrapped with create-next-app.</p>
+            <p>This site is a Next.js project bootstrapped with create-next-app. The structure has been written using typescript</p>
           </main>
         </div>
       );
