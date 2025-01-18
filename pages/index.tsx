@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             </div>
           </Link>
 
-          <Link href="#">
+          <Link href="/other">
             <div className={styles.card}>
               <h2>Other &rarr;</h2>
               <p>Random Ideas I had in mind!</p>
