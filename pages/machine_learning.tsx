@@ -16,7 +16,7 @@ const Machine_Learning: NextPage = () => {
             <h1 className={styles.title}>Hello! Creator here, Read on!</h1>
     
             <p className={styles.description}>
-              Since creating visualizations for all the projects here will take a while, results are mostly psoted here, however maybe demos as well? All original code is on github.
+              Since creating visualizations for all the projects here will take a while, results are mostly posted here, however maybe demos as well? All original code is on github.
             </p>
             <div className={styles.grid}>
               <Link href="#" >
