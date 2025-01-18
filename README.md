@@ -1,6 +1,9 @@
 This site is being hosted on Vercel:
 https://i-panicked-and-made-this.vercel.app/
 
+
+website still in progress
+
 Each project hosted on this site has its separate GitHub repository
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
