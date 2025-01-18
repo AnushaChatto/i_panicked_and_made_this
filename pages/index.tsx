@@ -34,10 +34,10 @@ const Home: NextPage = () => {
             </div>
           </Link>
 
-          <Link href="#">
+          <Link href="/machine_learning">
             <div className={styles.card}>
               <h2>Machine Learning &rarr;</h2>
-              <p>I did fancy ML Stuff!!</p>
+              <p>I did "fancy" ML Stuff!!</p>
             </div>
           </Link>
 

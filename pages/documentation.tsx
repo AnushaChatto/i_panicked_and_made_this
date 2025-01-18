@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Link from 'next/link'
-const DynamicAlgos: NextPage = () => {
+const Documentation: NextPage = () => {
     return (
         <div className={styles.container}>
           <Head>
@@ -28,4 +28,4 @@ const DynamicAlgos: NextPage = () => {
       );
 }
 
-export default DynamicAlgos
+export default Documentation
