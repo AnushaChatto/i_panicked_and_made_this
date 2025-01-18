@@ -37,7 +37,7 @@ const Home: NextPage = () => {
           <Link href="/machine_learning">
             <div className={styles.card}>
               <h2>Machine Learning &rarr;</h2>
-              <p>I did &lquot;fancy&rquot; ML Stuff!!</p>
+              <p>I did &quot; fancy &quot; ML Stuff!!</p>
             </div>
           </Link>
 
