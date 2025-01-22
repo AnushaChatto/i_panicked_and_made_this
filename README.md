@@ -6,7 +6,9 @@ The website is still in progress
 
 Each project hosted on this site has its separate GitHub repository
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/)
+
+setup same as the nextjs app, instructions henceforth
 
 ## Getting Started
 
