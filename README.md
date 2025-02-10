@@ -8,7 +8,7 @@ Each project hosted on this site has its separate GitHub repository
 
 This is a [Next.js](https://nextjs.org/)
 
-setup same as the nextjs app, origial : instructions henceforth
+setup same as the nextjs app, original : instructions henceforth
 
 ## Getting Started
 
