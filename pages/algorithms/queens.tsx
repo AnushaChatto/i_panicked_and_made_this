@@ -26,7 +26,7 @@
 //         <div className={styles.code}>
 //           <ReactSyntaxHighlighter language="javascript">
 //             queens
-          
+
 //           </ReactSyntaxHighlighter>
 //         </div>
 //         <p>Input Number</p>
@@ -59,7 +59,8 @@ const Queens: NextPage = () => {
         <h1 className={styles.title}>N Queens Problem</h1>
 
         <p className={styles.description}>
-          The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.
+          The N Queen is the problem of placing N chess queens on an N×N
+          chessboard so that no two queens attack each other.
         </p>
 
         <p>Basic Logic</p>
@@ -83,37 +84,40 @@ function solveNQueens(n) {
         />
 
         {/* Render Checkerboard Grid */}
-{n > 0 && (
-  <div
-    className={algorithm.grid}
-    style={{
-      display: "grid",
-      gridTemplateColumns: `repeat(${n}, 40px)`,
-      gridTemplateRows: `repeat(${n}, 40px)`,
-      gap: "0",
-      marginTop: "20px",
-      border: "2px solid #333",
-    }}
-  >
-    {Array.from({ length: n * n }).map((_, i) => {
-      const row = Math.floor(i / n);
-      const col = i % n;
-      const isLight = (row + col) % 2 === 0;
+        <div className={styles.margincontainer}>
+          {n > 0 && (
+            <div
+              className={algorithm.grid}
+              style={{
+                display: "grid",
+                gridTemplateColumns: `repeat(${n}, 1fr)`,
+                gridTemplateRows: `repeat(${n}, 1fr)`,
+                width: "min(90vmin, 500px)", // fits viewport, max 500px
+                aspectRatio: "1", // keeps it a square
+                gap: "0",
+                marginTop: "20px",
+                border: "2px solid #333",
+              }}
+            >
+              {Array.from({ length: n * n }).map((_, i) => {
+                const row = Math.floor(i / n);
+                const col = i % n;
+                const isLight = (row + col) % 2 === 0;
 
-      return (
-        <div
-          key={i}
-          style={{
-            width: "40px",
-            height: "40px",
-            backgroundColor: isLight ? "#ffffffff" : "#9c97faff", // chessboard 
-          }}
-        />
-      );
-    })}
-  </div>
-)}
-
+                return (
+                  <div
+                    key={i}
+                    style={{
+                      backgroundColor: isLight ? "#ffffff" : "#9c97fa",
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                );
+              })}
+            </div>
+          )}
+        </div>
       </main>
     </div>
   );

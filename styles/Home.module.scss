@@ -346,8 +346,10 @@
   }
 }
 
-
-
+.margincontainer{
+  padding-top: 2em;
+  padding-bottom: 10em;
+}
 
 @media (max-width: 600px) {
   .grid {
