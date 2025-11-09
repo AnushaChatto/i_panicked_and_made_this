@@ -12,6 +12,8 @@ setup same as the nextjs app, original : instructions henceforth
 
 ## Getting Started
 
+install npm at first!! 
+
 First, run the development server:
 
 ```bash

@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <Link href="/documentation">
             <div className={styles.card}>
-              <h2>Documentation?? &rarr;</h2>
+              <h2>About this site?? &rarr;</h2>
               <p>Why did I make this? and How?.</p>
             </div>
           </Link>
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           <Link href="/dynamicAlgos">
             <div className={styles.card}>
               <h2>Algorithms &rarr;</h2>
-              <p>I solved random algorithms problems and then animated them!</p>
+              <p>I solved random algorithms problems and then showcased them!</p>
             </div>
           </Link>
 
