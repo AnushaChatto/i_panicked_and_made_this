@@ -21,7 +21,7 @@ const Queens: NextPage = () => {
 
     if (n > 12) {
       setCount(null);
-      setMessage("N is too large, max is 12");
+      setMessage("N is too large, max set to the api is 12, sorry :(");
       return;
     }
 
@@ -89,7 +89,7 @@ const Queens: NextPage = () => {
               <strong>Number of Solutions:</strong> {count}
             </p>
           )}
-          {!loading && firstSolution && (
+          {!loading && firstSolution && count !== null && (
             <div>
               <strong>First Solution Coordinates (row, col):</strong>
               <ul style={{ listStyle: "none" }}>
