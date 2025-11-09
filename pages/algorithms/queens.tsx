@@ -14,13 +14,13 @@ const Queens: NextPage = () => {
   useEffect(() => {
     if (n <= 0) {
       setCount(null);
-      setMessage("Enter a number between 1 and 15");
+      setMessage("Enter a number between 1 and 12");
       return;
     }
 
     if (n > 20) {
       setCount(null);
-      setMessage("N is too large, max is 15");
+      setMessage("N is too large, max is 12");
       return;
     }
 
@@ -53,7 +53,7 @@ const Queens: NextPage = () => {
         <h1 className={styles.title}>N Queens Problem</h1>
 
         <p className={styles.description}>
-          The N Queen is the problem of placing N chess queens on an N×N
+          The N Queen is the problem of placing N chess queens on an NxN
           chessboard so that no two queens attack each other.
         </p>
 
@@ -64,7 +64,7 @@ const Queens: NextPage = () => {
           </Link>
         </p>
 
-        <p>Input Number(1-15)</p>
+        <p>Input Number(1-12)</p>
         <input
           type="number"
           min={1}

@@ -24,7 +24,7 @@ function solveNQueensCount(n: number, row = 0, board: number[] = []): number {
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const n = Number(req.query.n) || 0;
 
-  if (n <= 0 || n > 16) {
+  if (n <= 0 || n > 13) {
     res.status(400).json({ error: "n must be between 1 and 20" });
     return;
   }
