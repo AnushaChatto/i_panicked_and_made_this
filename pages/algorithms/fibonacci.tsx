@@ -9,10 +9,10 @@ const Fibonacci: NextPage = () => {
   const [series, setSeries] = useState<number[]>([]);
   const [loading, setLoading] = useState(false);
 
-  
   const generateFibonacci = (n: number): number[] => {
     const result: number[] = [];
-    let a = 0, b = 1;
+    let a = 0,
+      b = 1;
     for (let i = 0; i < n; i++) {
       result.push(a);
       [a, b] = [b, a + b];
@@ -36,9 +36,9 @@ const Fibonacci: NextPage = () => {
     const timer = setTimeout(() => {
       setSeries(generateFibonacci(n));
       setLoading(false);
-    }, 200); 
+    }, 200);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, [number]);
 
   return (
@@ -53,8 +53,8 @@ const Fibonacci: NextPage = () => {
         <h1 className={styles.title}>The Fibonacci Series</h1>
 
         <p className={styles.description}>
-          A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers.
-          Example: 0, 1, 1, 2, 3, 5, 8, etc.
+          A series of numbers in which each number (Fibonacci number) is the sum
+          of the two preceding numbers. Example: 0, 1, 1, 2, 3, 5, 8, etc.
         </p>
 
         <p>Basic Logic</p>
@@ -67,14 +67,13 @@ return fib(n-1) + fib(n-2);`}
 
         <p>Enter a length of series:</p>
         <input
-  type="text"
-  value={number}
-  onChange={(e) =>
-    setNumber(e.target.value === "" ? "0" : e.target.value)
-  }
-  placeholder="Enter the length of series"
-/>
-
+          type="text"
+          value={number}
+          onChange={(e) =>
+            setNumber(e.target.value === "" ? "0" : e.target.value)
+          }
+          placeholder="Enter the length of series"
+        />
 
         {loading && <p>Loading...</p>}
 
