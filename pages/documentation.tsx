@@ -40,6 +40,7 @@ const Documentation: NextPage = () => {
           This site is a Next.js project bootstrapped with create-next-app. The
           structure has been written using typescript
         </p>
+        <p> So far everything is hosted on vercel and vercel apis.</p>
         <p>
           This was made to compile the kind of work I have experience with,
           though most of it is behind private repositories so can&apos;t be showcased
