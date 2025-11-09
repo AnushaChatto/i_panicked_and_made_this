@@ -42,7 +42,7 @@ const Documentation: NextPage = () => {
         </p>
         <p>
           This was made to compile the kind of work I have experience with,
-          though most of it is behind private repositories so can't be showcased
+          though most of it is behind private repositories so can&apos;t be showcased
           here. But I shall try my best.
         </p>
         <p>
@@ -203,7 +203,7 @@ were related to aiding the ISCnet team and aiding the student cluster competitio
                 </li>
                 <li>
                   <strong>Mozilla SRM Campus Chapter</strong> — (2016-2018)
-                  <p><ul><li>Organizing Committee- HelloWeb Hackathon Technopreneurs' Surrogate Ventures</li><li>
+                  <p><ul><li>Organizing Committee- HelloWeb Hackathon Technopreneurs&apos; Surrogate Ventures</li><li>
 Web development teaching- Hope Foundation (Kolkata, India)</li><li>
 Volunteer- Bagheera project</li></ul></p>
                 </li>
