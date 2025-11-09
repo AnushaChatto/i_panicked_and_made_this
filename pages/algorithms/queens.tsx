@@ -10,6 +10,7 @@ const Queens: NextPage = () => {
   const [count, setCount] = useState<number | null>(null);
   const [message, setMessage] = useState<string>(""); // <-- new message state
   const [loading, setLoading] = useState(false);
+  const [firstSolution, setFirstSolution] = useState<number[] | null>(null);
 
   useEffect(() => {
     if (n <= 0) {
@@ -18,7 +19,7 @@ const Queens: NextPage = () => {
       return;
     }
 
-    if (n > 20) {
+    if (n > 12) {
       setCount(null);
       setMessage("N is too large, max is 12");
       return;
@@ -26,16 +27,18 @@ const Queens: NextPage = () => {
 
     // valid n
     setLoading(true);
-    setMessage(""); // clear previous message
+    setMessage("");
     fetch(`/api/nqueens?n=${n}`)
       .then((res) => res.json())
       .then((data) => {
         setCount(data.count);
+        setFirstSolution(data.firstSolution);
         setLoading(false);
       })
       .catch((err) => {
         console.error(err);
         setCount(null);
+        setFirstSolution(null);
         setMessage("Failed to fetch results");
         setLoading(false);
       });
@@ -68,7 +71,7 @@ const Queens: NextPage = () => {
         <input
           type="number"
           min={1}
-          max={20}
+          max={12}
           value={n || ""}
           onChange={(e) => setN(Number(e.target.value))}
           placeholder="Enter N"
@@ -85,6 +88,18 @@ const Queens: NextPage = () => {
             <p>
               <strong>Number of Solutions:</strong> {count}
             </p>
+          )}
+          {!loading && firstSolution && (
+            <div>
+              <strong>First Solution Coordinates (row, col):</strong>
+              <ul style={{ listStyle: "none" }}>
+                {firstSolution.map((col, row) => (
+                  <li key={row}>
+                    ({row}, {col})
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
 
@@ -108,6 +123,8 @@ const Queens: NextPage = () => {
                 const row = Math.floor(i / n);
                 const col = i % n;
                 const isLight = (row + col) % 2 === 0;
+                const hasQueen = firstSolution && firstSolution[row] === col; // check if this cell has a queen
+
                 return (
                   <div
                     key={i}
@@ -115,8 +132,23 @@ const Queens: NextPage = () => {
                       backgroundColor: isLight ? "#ffffff" : "#9c97fa",
                       width: "100%",
                       height: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      position: "relative",
                     }}
-                  />
+                  >
+                    {hasQueen && (
+                      <div
+                        style={{
+                          width: "50%",
+                          height: "50%",
+                          backgroundColor: "black",
+                          borderRadius: "50%", // makes it a circle
+                        }}
+                      />
+                    )}
+                  </div>
                 );
               })}
             </div>
