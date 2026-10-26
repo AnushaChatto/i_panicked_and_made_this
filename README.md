@@ -1,8 +1,7 @@
-This site is being hosted on Vercel:
-https://i-panicked-and-made-this.vercel.app/
 
 
-The website is still in progress
+
+The website production is paused
 
 Each project hosted on this site has its separate GitHub repository
 
